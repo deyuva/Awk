@@ -1,0 +1,33 @@
+               AAA                                            kkkkkkkk           
+              A:::A                                           k::::::k           
+             A:::::A                                          k::::::k           
+            A:::::::A                                         k::::::k           
+           A:::::::::Awwwwwww           wwwww           wwwwwwwk:::::k    kkkkkkk
+          A:::::A:::::Aw:::::w         w:::::w         w:::::w k:::::k   k:::::k 
+         A:::::A A:::::Aw:::::w       w:::::::w       w:::::w  k:::::k  k:::::k  
+        A:::::A   A:::::Aw:::::w     w:::::::::w     w:::::w   k:::::k k:::::k   
+       A:::::A     A:::::Aw:::::w   w:::::w:::::w   w:::::w    k::::::k:::::k    
+      A:::::AAAAAAAAA:::::Aw:::::w w:::::w w:::::w w:::::w     k:::::::::::k     
+     A:::::::::::::::::::::Aw:::::w:::::w   w:::::w:::::w      k:::::::::::k     
+    A:::::AAAAAAAAAAAAA:::::Aw:::::::::w     w:::::::::w       k::::::k:::::k    
+   A:::::A             A:::::Aw:::::::w       w:::::::w       k::::::k k:::::k   
+  A:::::A               A:::::Aw:::::w         w:::::w        k::::::k  k:::::k  
+ A:::::A                 A:::::Aw:::w           w:::w         k::::::k   k:::::k 
+AAAAAAA                   AAAAAAAwww             www          kkkkkkkk    kkkkkkk
+
+
+Usful scripts:
+
+- Sum all fields in the line.
+  '{s=0; for (i=1; i<=NF; i++) s=s+$i; print s}'
+
+- Sum all the fields in all lines.
+  'BEGIN {s = 0}; {for (i=1; i<=NF; i++) s=s+$i}; END{print s}'
+  
+- Print line numbers before each line.
+  '{print NR, "\t" ,$0}'
+  
+ -
+
+
+
